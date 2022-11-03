@@ -1,0 +1,174 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ecb3b3; 
+}
+.admin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px; 
+}
+.admin-container h1{
+    margin-bottom: 28px;
+}
+
+.btn-register{
+    margin-bottom: 28px;
+    background-color: black;
+}
+
+.list{
+   width: 90%;
+   max-width: 600px;
+   display: flex;
+   flex-direction: column;
+   border-radius: 4px;
+   margin-bottom: 12px;
+   justify-content: center;
+   padding: 14px 8px;
+  
+}
+.list div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.split{
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #FFF;
+}
+.list p{
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.btn-edit{
+    border-radius: 4px;
+    padding: 10px; 
+    font-size: 20px;
+    color: #FFF;
+    border: 3px #2B62A0 solid;
+    background-color: transparent;
+}
+
+.btn-delete{
+    color: #ffcc23;
+    background-color:rgba(219,38,41,0.35);
+    border: 0;
+    padding: 8px; 
+    font-size: 20px;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.btn-logout{
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+    background-color:rgba(219,38,41,0.35);
+    color: #fafafa;
+    transition: all 0.5s;
+    font-size: 28px;
+}
+.btn-user{
+    position: fixed;
+    top: 6%;
+    right: 12%;
+    width: 55px;
+    height: 55px;
+    border-radius: 25px;
+    border: 0;
+    font-weight: bold;
+    background-color:rgba(58, 46, 46, 0.35);
+    color: #fafafa;
+    transition: all 0.5s;
+    font-size: 28px;
+}
+
+.btn-logout:hover, .btn-delete:hover{
+    background-color:rgb(252, 0, 4);
+    color: #FFF;
+}
+.btn-user:hover{
+    background-color:rgb(0, 0, 0); 
+    color: #FFF;
+}
+
+@media (max-width:950px) {
+  
+    .btn-logout{
+        top: 3%;
+        right: 3%;
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        font-size: 22px;
+    }
+    .btn-user{
+        top: 3%;
+        right: 9%;
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        margin-right: 5px;
+    }
+}
+@media (max-width:720px){
+    .admin-container{
+        margin-top: 38px;   
+    }
+    .list{
+        max-width: 500px;   
+     }
+     .list p{
+        font-size: 18px;
+    }
+    .btn-edit{
+        padding: 8px; 
+        font-size: 18px;
+        border: 2px #2B62A0 solid;
+    }
+     .btn-delete{
+        color: #ffcc23;
+        background-color:rgba(219,38,41,0.35);
+        border: 0;
+        padding: 6px; 
+        font-size: 18px;
+    } 
+    .btn-logout, .btn-user{
+        width: 35px;
+        height: 35px;
+    }
+    
+}
+@media (max-width:600px){
+   
+    .list{
+        max-width: 420px;  
+     }
+     .list p{
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    .form{
+        max-width: 300px;
+    }
+    .btn-logout, .btn-user{
+        width: 24px;
+        height: 24px;
+        font-size: 16px;
+        position: absolute;
+    }
+    
+}
