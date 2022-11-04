@@ -1,6 +1,6 @@
 ## Sobre
 
-[Readme - Clique aqui](https://github.com/wagnerSfarias/to-do-list-React)
+[Readme - Clique aqui](https://github.com/wagnerSfarias/to-do-list-RN)
 
 ## Layout 
 <img width="600" src="https://raw.githubusercontent.com/wagnerSfarias/to-do-list-React/main/src/assets/login.png">
